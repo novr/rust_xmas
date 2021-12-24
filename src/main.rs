@@ -69,7 +69,7 @@ fn main() {
                     n
                 },
                 Err(_) => {
-                    eprintln!("error: second argument not an integer");
+                    eprintln!("error: not an integer");
                     help();
                     return;
                 },
