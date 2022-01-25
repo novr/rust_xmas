@@ -44,7 +44,7 @@ fn t(h: i32) {
         print!("\x1b[32m{}", SL);
     }
     if h > 10 {
-        print!("\n");
+        println!();
         for _i in 0..h {
             print!(" ");
         }
