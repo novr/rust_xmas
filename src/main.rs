@@ -1,5 +1,5 @@
-use std::env;
 use rand::seq::SliceRandom;
+use std::env;
 
 const SS: char = '\u{2605}';
 const SF: char = '\u{FF0F}';
@@ -62,20 +62,18 @@ fn main() {
     match args.len() {
         1 => {
             t(20);
-        },
+        }
         2 => {
             let number: i32 = match args[1].parse() {
-                Ok(n) => {
-                    n
-                },
+                Ok(n) => n,
                 Err(_) => {
                     eprintln!("error: not an integer");
                     help();
                     return;
-                },
+                }
             };
             t(number);
-        },
+        }
         _ => {
             help();
         }
